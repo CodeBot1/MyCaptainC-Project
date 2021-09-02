@@ -1,0 +1,13 @@
+#include <iostream>
+using namespace std;
+
+int main()
+{
+    //code for printing product of 2 number 
+    double num1,num2;
+    cout<<"Enter two numbers : ";
+    cin>>num1>>num2;
+    cout<<"\nProduct = "<<num1*num2;
+    
+    return 0;
+}
