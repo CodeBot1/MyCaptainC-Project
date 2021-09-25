@@ -1,0 +1,53 @@
+#include <iostream>
+using namespace std;
+ int prime(int x)
+ {
+    int t=0;
+    for(int i=2;i<x;i++)
+    {
+        int d=x%i;
+        if(d==0)
+        {
+            t=1;
+            break;
+         
+        }
+        
+        else
+        continue;
+    }
+       if(t==1)
+       return 0;
+       else
+       return 1;
+      
+ }
+
+int main()
+{
+    cout<<"Enter the number: ";
+    int num;
+    cin>>num;
+   
+
+    for(int i=2;i<=num/2;i++)
+    {
+       
+        if(prime(i))
+        {
+            if(prime(num-i))
+            {
+                cout<<"GIVEN NUMBER IS SUM OF "<<i<<" + "<<num-i<<endl;
+                
+            }
+            else
+            continue;
+           
+        }
+        else
+        continue;
+    }
+   
+    
+    
+}
