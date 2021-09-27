@@ -1,0 +1,22 @@
+#include <iostream>
+#include <iomanip>
+using namespace std;
+int main()
+{
+    int hh,mm,ss;
+    cout << "Enter time:" << endl;
+    cout << "Hours?   ";
+    cin >> hh;
+    cout << "Minutes? ";         
+    cin >> mm;
+    cout << "Seconds? ";          
+    cin >> ss;
+    cout<<endl;
+    cout << "The time is = " << setw(2) << setfill('0') << hh << ":"
+                             << setw(2) << setfill('0') << mm << ":"
+                             << setw(2) << setfill('0') << ss << endl;
+    int sec;
+    sec = hh*3600 + mm*60 + ss;
+    cout << "Time in total seconds: " << sec;
+    return 0;
+}
